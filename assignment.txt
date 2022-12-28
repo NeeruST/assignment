@@ -1,0 +1,155 @@
+Q1.
+while example:
+pyhton
+x=1
+while x<=10:
+  print(x)
+  x++
+  
+continue exmaple:
+x = 10
+ 
+while x <= 100:
+ 
+  x = x + 10
+ 
+  if x == 30:
+ 
+    continue
+ 
+  print ("The value of variable is :", x)
+  
+for example:
+
+for i in range(10):
+  print i
+  
+if else example:
+
+x = 1
+if x<=5:
+  print(x)
+  x++
+else:
+  print("x is greater than 5")
+  break
+  
+  
+switch example:
+
+user_input = int(input("enter number between 1-5\n"))
+
+match user_input:
+
+        case 1:
+
+         print( "You entered a odd number")
+
+        case 2:
+
+         print( "You entered a even number")
+
+        case 3:
+
+         print( "You entered a odd number")
+
+        case 4:
+
+         print( "You entered a even number")
+
+        case 5:
+
+         print( "You entered a odd number")
+  
+  
+
+recursion example:
+def power(num, topwr):
+    if topwr == 0:
+        return 1
+    else:
+        return num * power(num, topwr - 1)
+
+
+print('{} to the power of {} is {}'.format(4, 7, power(4, 7)))
+print('{} to the power of {} is {}'.format(2, 8, power(2, 8)))
+
+
+BST example:
+
+algorithm:
+
+If root == NULL 
+    return NULL;
+If number == root->data 
+    return root->data;
+If number < root->data 
+    return search(root->left)
+If number > root->data 
+    return search(root->right)
+  
+  
+Closure example:
+
+def outer(name):
+
+    def inner():
+        
+        print(name)
+
+    return inner
+
+myFunction = outer('TechVidvan')
+myFunction()
+
+
+getElementById implementation:
+const myElement = document.getElementById("demo");
+myElement.style.color = "red";
+
+
+Prime no in javascript:
+
+<script>
+
+
+function isPrime(n)
+{
+	if (n <= 1) return false;
+	if (n <= 3) return true;
+	
+	if (n%2 == 0 || n%3 == 0) return false;
+	
+	for (let i=5; i*i<=n; i=i+6)
+		if (n%i == 0 || n%(i+2) == 0)
+		return false;
+	
+	return true;
+}
+
+
+function nextPrime(N)
+{
+	if (N <= 1)
+		return 2;
+
+	let prime = N;
+	let found = false;
+
+	while (!found) {
+		prime++;
+
+		if (isPrime(prime))
+			found = true;
+	}
+
+	return prime;
+}
+
+// Driver code
+
+	let N = 3;
+
+	document.write(nextPrime(N));
+
+</script>
